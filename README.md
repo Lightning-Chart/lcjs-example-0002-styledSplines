@@ -95,11 +95,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#axisscrollstrategies
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/chartxy.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#colorrgba
+[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#axisscrollstrategies
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/chartxy.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#colorrgba
 [ProgressiveRandomGenerator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/solidfill.html
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/solidline.html
-[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/splineseries.html
-[transparentFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#transparentfill
+[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidfill.html
+[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidline.html
+[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/splineseries.html
+[transparentFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#transparentfill
