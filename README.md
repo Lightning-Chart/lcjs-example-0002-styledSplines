@@ -1,4 +1,4 @@
-# Styled splines
+# Styled Splines
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -14,7 +14,8 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description 
+
+## Description
 
 This example shows how to draw and style spline-series. 
 
@@ -63,19 +64,20 @@ splineSeries
     .setPointFillStyle(transparentFill)
 ```
 
-### API links
 
-* Solid LineStyle: [SolidLine][]
-* Solid FillStyle: [SolidFill][]
-* Transparent FillStyle: [transparentFill][]
-* RGBA color factory: [ColorRGBA][]
-* XY cartesian chart: [ChartXY][]
-* Spline series: [SplineSeries][]
-* Scroll strategies: [AxisScrollStrategies][]
-* Progressive random data generator: [ProgressiveRandomGenerator][]
+## API Links
+
+* Solid LineStyle: [SolidLine]
+* Solid FillStyle: [SolidFill]
+* Transparent FillStyle: [transparentFill]
+* RGBA color factory: [ColorRGBA]
+* XY cartesian chart: [ChartXY]
+* Spline series: [SplineSeries]
+* Scroll strategies: [AxisScrollStrategies]
+* Progressive random data generator: [ProgressiveRandomGenerator]
 
 
-### Support
+## Support
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
@@ -87,19 +89,21 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
-
 [0]: https://github.com/Arction/
 [1]: https://www.arction.com/lightningchart-js-api-documentation/
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#axisscrollstrategies
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/chartxy.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#colorrgba
+© Arction Ltd 2009-2019. All rights reserved.
+
+
+[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidline.html
+[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidfill.html
+[transparentFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#transparentfill
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorrgba
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
+[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/splineseries.html
+[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#axisscrollstrategies
 [ProgressiveRandomGenerator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidfill.html
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidline.html
-[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/splineseries.html
-[transparentFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#transparentfill
+

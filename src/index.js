@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases creation and styling of spline-series.
  */
 // Import LightningChartJS
