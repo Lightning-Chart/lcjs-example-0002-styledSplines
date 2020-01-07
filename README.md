@@ -38,7 +38,7 @@ const strokeStyle = new SolidLine()
         // SolidLine can have only SolidFill fill-style.
         new SolidFill().setColor(ColorRGBA(96, 204, 232))
     )
-    // Set thinkness of the stroke.
+    // Set thickness of the stroke.
     .setThickness(5.0)
 
 // Apply styling settings to the series.
