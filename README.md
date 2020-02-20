@@ -28,7 +28,7 @@ First create the series using chart method.
 const splineSeries = chart.addSplineSeries()
 ```
 
-##### Option 1: Styling using a style object.
+## Option 1: Styling using a style object.
 
 The first option for styling of series is to create a new object that contains the necessary information about visual settings. In the case of line-series, the object must be type of *SolidLine* to be visible.
 
@@ -47,7 +47,7 @@ const strokeStyle = new SolidLine()
 splineSeries.setStrokeStyle(strokeStyle)
 ```
 
-##### Option 2: Styling using a mutator function.
+## Option 2: Styling using a mutator function.
 
 Usually, it can be even more easy to simply modify the existing *Style* of a component, rather than constructing a new one. This is done using so-called *mutator-functions*. Here's an example:
 
@@ -61,8 +61,10 @@ Our coding practices include fluent, self-returning API, which allows us to easi
 ```javascript
 splineSeries
     .setStrokeStyle(strokeStyle)
-    // 'transparentFill' is a static constant that needs to be imported from the library in order to be used.
-    // It is used to draw things with transparent fill that aren't disposable - like the points of a PointLineSeries.
+    // 'transparentFill' is a static constant
+    // that needs to be imported from the library in order to be used.
+    // It is used to draw things with transparent fill that aren't disposable 
+    // - like the points of a PointLineSeries.
     .setPointFillStyle(transparentFill)
 ```
 
