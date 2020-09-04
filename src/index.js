@@ -11,23 +11,29 @@ const {
     AxisScrollStrategies,
     PointShape,
     SolidFill,
-    ColorHEX
+    ColorHEX,
+    Themes
 } = lcjs
 
 const {
     createProgressiveRandomGenerator
 } = require('@arction/xydata')
-
+// Decide on an origin for DateTime axis.
 const dateOrigin = new Date()
 const dataFrequency = 1000
 const chart = lightningChart().ChartXY({
-    defaultAxisXTickStrategy: AxisTickStrategies.DateTime(dateOrigin)
+    // theme: Themes.dark
 })
-    .setTitle('Live power consumption')
 
-chart.getDefaultAxisX()
-    // Progressive DateTime view of 30 seconds.
-    .setInterval(-30 * 1000, 0)
+chart
+    .setTitle('Live power consumption')
+    // Modify the default X Axis to use DateTime TickStrategy, and set the origin for the DateTime Axis.
+    .getDefaultAxisX().setTickStrategy(
+        AxisTickStrategies.DateTime,
+        (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin)
+    )
+    // Progressive DateTime view of 61 seconds.
+    .setInterval(-61 * 1000, 0)
     .setScrollStrategy(AxisScrollStrategies.progressive)
 
 chart.getDefaultAxisY()
@@ -39,7 +45,7 @@ const series = chart.addSplineSeries({ pointShape: PointShape.Circle })
     .setName('Power consumption')
     .setStrokeStyle((strokeStyle) => strokeStyle
         .setThickness(4)
-        .setFillStyle(new SolidFill({ color: ColorHEX('#FFA500') }))
+        .setFillStyle(new SolidFill({ color: ColorHEX('#A9ED59') }))
     )
     .setPointSize(8)
     .setCursorInterpolationEnabled(false)

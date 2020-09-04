@@ -71,14 +71,14 @@ splineSeries
 
 ## API Links
 
-* Solid LineStyle: [SolidLine]
-* Solid FillStyle: [SolidFill]
-* Transparent FillStyle: [transparentFill]
-* RGBA color factory: [ColorRGBA]
-* XY cartesian chart: [ChartXY]
-* Spline series: [SplineSeries]
-* Scroll strategies: [AxisScrollStrategies]
-* Progressive random data generator: [ProgressiveRandomGenerator]
+* [Solid LineStyle]
+* [Solid FillStyle]
+* [Transparent FillStyle]
+* [RGBA color factory]
+* [XY cartesian chart]
+* [Spline series]
+* [Scroll strategies]
+* [Progressive random data generator]
 
 
 ## Support
@@ -102,12 +102,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidline.html
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidfill.html
-[transparentFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#transparentfill
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorrgba
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
-[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/splineseries.html
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#axisscrollstrategies
-[ProgressiveRandomGenerator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
+[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/solidline.html
+[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/solidfill.html
+[Transparent FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#transparentfill
+[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#colorrgba
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html
+[Spline series]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/splineseries.html
+[Scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#axisscrollstrategies
+[Progressive random data generator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
 
