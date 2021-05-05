@@ -49,7 +49,7 @@ const series = chart.addSplineSeries({ pointShape: PointShape.Circle })
     )
     .setPointSize(8)
     .setCursorInterpolationEnabled(false)
-    .setResultTableFormatter((tableBuilder, series, x, y) => tableBuilder
+    .setCursorResultTableFormatter((tableBuilder, series, x, y) => tableBuilder
         .addRow(series.getName())
         .addRow(series.axisX.formatValue(x))
         .addRow(series.axisY.formatValue(y) + ' kW')
