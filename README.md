@@ -1,6 +1,6 @@
-# Styled Splines
+# JavaScript Spline Line Chart
 
-![Styled Splines](styledSplines.png)
+![JavaScript Spline Line Chart](styledSplines.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
