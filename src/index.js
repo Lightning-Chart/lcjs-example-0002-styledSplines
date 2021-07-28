@@ -22,7 +22,7 @@ const {
 const dateOrigin = new Date()
 const dataFrequency = 1000
 const chart = lightningChart().ChartXY({
-    // theme: Themes.dark
+    // theme: Themes.darkGold
 })
 
 chart
@@ -43,11 +43,6 @@ chart.getDefaultAxisY()
 
 const series = chart.addSplineSeries({ pointShape: PointShape.Circle })
     .setName('Power consumption')
-    .setStrokeStyle((strokeStyle) => strokeStyle
-        .setThickness(4)
-        .setFillStyle(new SolidFill({ color: ColorHEX('#A9ED59') }))
-    )
-    .setPointSize(8)
     .setCursorInterpolationEnabled(false)
     .setCursorResultTableFormatter((tableBuilder, series, x, y) => tableBuilder
         .addRow(series.getName())
