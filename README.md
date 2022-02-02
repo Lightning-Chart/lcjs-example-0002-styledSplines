@@ -102,12 +102,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/solidline.html
-[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/solidfill.html
-[Transparent FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#transparentfill
-[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#colorrgba
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/chartxy.html
-[Spline series]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/splineseries.html
-[Scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#axisscrollstrategies
+[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/solidline.html
+[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/solidfill.html
+[Transparent FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#transparentfill
+[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#colorrgba
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/chartxy.html
+[Spline series]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/splineseries.html
+[Scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#axisscrollstrategies
 [Progressive random data generator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
 
