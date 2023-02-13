@@ -1,6 +1,6 @@
 # JavaScript Spline Line Chart
 
-![JavaScript Spline Line Chart](styledSplines.png)
+![JavaScript Spline Line Chart](styledSplines-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -8,18 +8,18 @@ LightningChart JS is entirely GPU accelerated and performance optimized charting
 
 The demo can be used as an example or a seed project. Local execution requires the following steps:
 
-- Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
-- Open the project folder in a terminal:
+-   Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
+-   Open the project folder in a terminal:
 
-        npm install              # fetches dependencies
-        npm start                # builds an application and starts the development server
+          npm install              # fetches dependencies
+          npm start                # builds an application and starts the development server
 
-- The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
+-   The application is available at _http://localhost:8080_ in your browser, webpack-dev-server provides hot reload functionality.
 
 
 ## Description
 
-This example shows how to draw and style spline-series. 
+This example shows how to draw and style spline-series.
 
 First create the series using chart method.
 
@@ -30,7 +30,7 @@ const splineSeries = chart.addSplineSeries()
 
 ## Option 1: Styling using a style object.
 
-The first option for styling of series is to create a new object that contains the necessary information about visual settings. In the case of line-series, the object must be type of *SolidLine* to be visible.
+The first option for styling of series is to create a new object that contains the necessary information about visual settings. In the case of line-series, the object must be type of _SolidLine_ to be visible.
 
 ```javascript
 // Create a new instance of visible solid line-style.
@@ -38,7 +38,7 @@ const strokeStyle = new SolidLine()
     // Set desired fill style of the stroke.
     .setFillStyle(
         // SolidLine can have only SolidFill fill-style.
-        new SolidFill().setColor(ColorRGBA(96, 204, 232))
+        new SolidFill().setColor(ColorRGBA(96, 204, 232)),
     )
     // Set thickness of the stroke.
     .setThickness(5.0)
@@ -49,11 +49,11 @@ splineSeries.setStrokeStyle(strokeStyle)
 
 ## Option 2: Styling using a mutator function.
 
-Usually, it can be even more easy to simply modify the existing *Style* of a component, rather than constructing a new one. This is done using so-called *mutator-functions*. Here's an example:
+Usually, it can be even more easy to simply modify the existing _Style_ of a component, rather than constructing a new one. This is done using so-called _mutator-functions_. Here's an example:
 
 ```javascript
 // Modify the previous Stroke style of a SplineSeries, by overriding its previous thickness.
-splineSeries.setStrokeStyle(strokeStyle => strokeStyle.setThickness(1.0))
+splineSeries.setStrokeStyle((strokeStyle) => strokeStyle.setThickness(1.0))
 ```
 
 Our coding practices include fluent, self-returning API, which allows us to easily call multiple setters in one statement.
@@ -63,7 +63,7 @@ splineSeries
     .setStrokeStyle(strokeStyle)
     // 'transparentFill' is a static constant
     // that needs to be imported from the library in order to be used.
-    // It is used to draw things with transparent fill that aren't disposable 
+    // It is used to draw things with transparent fill that aren't disposable
     // - like the points of a PointLineSeries.
     .setPointFillStyle(transparentFill)
 ```
@@ -85,29 +85,29 @@ splineSeries
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
-Official [API documentation][1] can be found on [Arction][2] website.
+Official [API documentation][1] can be found on [LightningChart][2] website.
 
 If the docs and other materials do not solve your problem as well as implementation help is needed, ask on [StackOverflow][3] (tagged lightningchart).
 
-If you think you found a bug in the LightningChart JavaScript library, please contact support@arction.com.
+If you think you found a bug in the LightningChart JavaScript library, please contact support@lightningchart.com.
 
-Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
+Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@lightningchart.com.
 
 [0]: https://github.com/Arction/
-[1]: https://www.arction.com/lightningchart-js-api-documentation/
-[2]: https://www.arction.com
+[1]: https://lightningchart.com/lightningchart-js-api-documentation/
+[2]: https://lightningchart.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
-[4]: https://www.arction.com/support-services/
+[4]: https://lightningchart.com/support-services/
 
-© Arction Ltd 2009-2020. All rights reserved.
+© LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/solidline.html
-[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/solidfill.html
-[Transparent FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#transparentfill
-[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#colorrgba
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/chartxy.html
-[Spline series]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/splineseries.html
-[Scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#axisscrollstrategies
+[Solid LineStyle]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/SolidLine.html
+[Solid FillStyle]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/SolidFill.html
+[Transparent FillStyle]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/transparentFill.html
+[RGBA color factory]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/functions/ColorRGBA.html
+[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/ChartXY.html
+[Spline series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/SplineSeries.html
+[Scroll strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/AxisScrollStrategies.html
 [Progressive random data generator]: https://arction.github.io/xydata/classes/progressiverandomgenerator.html
 
