@@ -9,11 +9,12 @@ const xydata = require('@arction/xydata')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, AxisTickStrategies, AxisScrollStrategies, PointShape, SolidFill, ColorHEX, Themes } = lcjs
-
 const { createProgressiveRandomGenerator } = xydata
+
 // Decide on an origin for DateTime axis.
 const dateOrigin = new Date()
-const dataFrequency = 1000
+const dateOriginTime = dateOrigin.getTime()
+
 const chart = lightningChart().ChartXY({
     // theme: Themes.darkGold
 })
@@ -53,7 +54,7 @@ createProgressiveRandomGenerator()
     .setStreamRepeat(true)
     .toStream()
     .forEach((point) => {
-        point.x = point.x * dataFrequency
+        point.x = Date.now() - dateOriginTime
         point.y = point.y * 2000
         series.add(point)
     })
