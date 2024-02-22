@@ -25,7 +25,7 @@ chart
     .getDefaultAxisX()
     .setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
     // Progressive DateTime view of 61 seconds.
-    .setInterval({ start: -61 * 1000, end: 0, stopAxisAfter: false })
+    .setDefaultInterval((state) => ({ end: state.dataMax, start: (state.dataMax ?? 0) - 61 * 1000, stopAxisAfter: false }))
     .setScrollStrategy(AxisScrollStrategies.progressive)
 
 chart
