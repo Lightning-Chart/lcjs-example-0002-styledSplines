@@ -16,7 +16,7 @@ const dateOrigin = new Date()
 const dateOriginTime = dateOrigin.getTime()
 
 const chart = lightningChart().ChartXY({
-    // theme: Themes.darkGold
+    theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
 })
 
 chart
