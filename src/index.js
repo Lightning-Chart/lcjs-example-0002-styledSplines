@@ -15,7 +15,9 @@ const { createProgressiveRandomGenerator } = xydata
 const dateOrigin = new Date()
 const dateOriginTime = dateOrigin.getTime()
 
-const chart = lightningChart().ChartXY({
+const chart = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        }).ChartXY({
     theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
 })
 
