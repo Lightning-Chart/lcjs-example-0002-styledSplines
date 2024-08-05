@@ -2,10 +2,10 @@
  * LightningChartJS example that showcases creation and styling of spline-series.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Import xydata
-const xydata = require('@arction/xydata')
+const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, AxisTickStrategies, AxisScrollStrategies, PointShape, SolidFill, ColorHEX, Themes } = lcjs
@@ -31,21 +31,16 @@ chart
     .setScrollStrategy(AxisScrollStrategies.progressive)
 
 chart
-    .getDefaultAxisY()
-    .setTitle('Power consumption (kW)')
+    .axisY
+    .setTitle('Power consumption')
+    .setUnits('kW')
     .setInterval({ start: 0, end: 500, stopAxisAfter: false })
     .setScrollStrategy(AxisScrollStrategies.expansion)
 
 const series = chart
-    .addSplineSeries({ pointShape: PointShape.Circle })
+    .addPointLineAreaSeries({ dataPattern: 'ProgressiveX' })
+    .setCurvePreprocessing({ type: 'spline' })
     .setName('Power consumption')
-    .setCursorInterpolationEnabled(false)
-    .setCursorResultTableFormatter((tableBuilder, series, x, y) =>
-        tableBuilder
-            .addRow(series.getName())
-            .addRow(series.axisX.formatValue(x))
-            .addRow(series.axisY.formatValue(y) + ' kW'),
-    )
 
 // Stream some random data.
 createProgressiveRandomGenerator()
