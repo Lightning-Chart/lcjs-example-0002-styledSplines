@@ -18,6 +18,7 @@ const dateOriginTime = dateOrigin.getTime()
 const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         }).ChartXY({
+    legend: { visible: false },
     theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
 })
 
@@ -28,17 +29,21 @@ chart
     .setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
     // Progressive DateTime view of 61 seconds.
     .setDefaultInterval((state) => ({ end: state.dataMax, start: (state.dataMax ?? 0) - 61 * 1000, stopAxisAfter: false }))
-    .setScrollStrategy(AxisScrollStrategies.progressive)
+    .setScrollStrategy(AxisScrollStrategies.scrolling)
 
-chart
-    .axisY
+chart.axisY
     .setTitle('Power consumption')
     .setUnits('kW')
     .setInterval({ start: 0, end: 500, stopAxisAfter: false })
     .setScrollStrategy(AxisScrollStrategies.expansion)
 
 const series = chart
-    .addPointLineAreaSeries({ dataPattern: 'ProgressiveX' })
+    .addPointLineAreaSeries({
+        schema: {
+            x: { pattern: 'progressive' },
+            y: { pattern: null },
+        },
+    })
     .setCurvePreprocessing({ type: 'spline' })
     .setName('Power consumption')
 
@@ -53,5 +58,5 @@ createProgressiveRandomGenerator()
     .forEach((point) => {
         point.x = Date.now() - dateOriginTime
         point.y = point.y * 2000
-        series.add(point)
+        series.appendSample(point)
     })
